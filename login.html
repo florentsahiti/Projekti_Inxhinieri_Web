@@ -40,31 +40,33 @@
                 <h2>Create an account</h2>
                 <div class="form-input">
                     <label>Username</label>
-                    <input type="text" placeholder="Enter your username">
+                    <input type="text" placeholder="Enter your username" id="useri">
                 </div>
                 <div class="form-input">
                     <label>Email</label>
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" id="emaili">
                 </div>
                 <div class="form-input">
                     <label>Password</label>
-                    <input type="Password" placeholder="Enter your Password">
+                    <input type="Password" placeholder="Enter your Password" id="pw">
                 </div>
-                <div class="form-input"></div>
-                <button class="button">Sign up</button>
+                <div class="form-input">
+                    <input style="cursor: pointer;" type="submit" onclick="validoMeRegex2()">
+                </div>
+                
             </div>
             <div class="login">
                 <h2>Login here</h2>
                     <div class="form-input">
                     <label>Username</label>
-                    <input type="text" placeholder="Enter your Username">
+                    <input type="text" placeholder="Enter your Username" id="useri">
                 </div>
                     <div class="form-input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your Password">
+                    <input type="password" placeholder="Enter your Password" id="pw">
                 </div>
                 <div class="form-input">
-                    <button class="button">Log in</button>
+                    <input type="submit" style="cursor: pointer;" onclick="validoMeRegex()">
                 </div>
             </div>
         </div>
