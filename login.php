@@ -40,7 +40,7 @@
                 <h2>Create an account</h2>
                 <div class="form-input">
                     <label>Username</label>
-                    <input type="text" placeholder="Enter your username" class="useri">
+                    <input type="text" placeholder="Enter your username" id="useri">
                 </div>
                 <div class="form-input">
                     <label>Email</label>
