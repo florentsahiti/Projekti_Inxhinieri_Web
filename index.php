@@ -125,7 +125,7 @@ table th {
 
 	<!--container--->
 	<section class="container">
-		<div class="text">
+		<div class="text" style="text-align:center;">
 			<h2>Statistikat e  <br> 5 lojeve te fundit!</h2>
 		</div>
 
