@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body{
             background-color:rgb(43, 92, 226);
@@ -20,11 +20,11 @@
 		<div class="bx bx-menu" id="menu-icon"></div>
 
 		<ul class="navbar">
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/players.html">Players</a></li>
-			<li><a href="/fixtures.html">Fixtures</a></li>
-			<li><a href="/index.html">Contact Us</a></li>
-			<li><a href="/login.html">Log In</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="players.php">Players</a></li>
+			<li><a href="fixtures.php">Fixtures</a></li>
+			<li><a href="index.php">Contact Us</a></li>
+			<li><a href="login.php">Log In</a></li>
 			
 		</ul>
 	</header>

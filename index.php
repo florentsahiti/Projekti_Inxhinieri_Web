@@ -109,7 +109,7 @@ table th {
 			<li><a href="#package">Players</a></li>
 			<li><a href="#fixtures">Fixtures</a></li>
 			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="/login.html">Log In</a></li>
+			<li><a href="login.php">Log In</a></li>
 			
 		</ul>
 	</header>
@@ -163,7 +163,7 @@ table th {
 			</div>
 
 		</div>
-		<a href="/Results.html"><h4 style="text-align: center; padding-top: 60px; color: black;"> < View Standing World Cup 2026 ></h4></a>
+		<a href="Results.php"><h4 style="text-align: center; padding-top: 60px; color: black;"> < View Standing World Cup 2026 ></h4></a>
 	</section>
 
 	<!--Players Package section--->
@@ -222,7 +222,7 @@ table th {
 
 		</div>
 
-		<a href="/players.html"><h4 style="text-align: center; padding-top: 60px; color: black;"> < View All Players ></h4></a>
+		<a href="players.php"><h4 style="text-align: center; padding-top: 60px; color: black;"> < View All Players ></h4></a>
 	</section>
 
 	 <!-- destination section -->
