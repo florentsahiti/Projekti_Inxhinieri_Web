@@ -57,12 +57,12 @@ function validoMeRegex2() {
         console.log("Username nuk eshte ne rregull");
     }
     if(pwRegex.test(pw)){
-        console.log("Passi eshte ne rregull")
+        console.log("Passwordi eshte ne rregull")
     }else{
-        console.log("Passi nuk eshte ne rregull")
+        console.log("Passwordi nuk eshte ne rregull")
     }
     if(emailRegex.test(email)){
-        console.log("emailio eshte ne rregull")
+        console.log("emaili eshte ne rregull")
     }else{
         console.log("emaili nuk eshte ne rregull")
     }
