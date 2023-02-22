@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kosovo National football team</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+
+	
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -126,7 +129,7 @@ table th {
 	<!--container--->
 	<section class="container">
 		<div class="text" style="text-align:center;">
-			<h2>Statistikat e  <br> 5 lojeve te fundit!</h2>
+			<h2>Statistikat e  <br> 3 lojeve te fundit!</h2>
 		</div>
 
 		<div class="row-items">
@@ -154,13 +157,7 @@ table th {
 				<p>Hungary 1-2 Kosova</p>
 			</div>
 
-			<div class="container-box">
-				<div class="container-img">
-					<img src="img/win.png">
-				</div>
-				<h4>Win </h4>
-				<p>Kosova 3-1 Croatia</p>
-			</div>
+			
 
 		</div>
 		<a href="Results.php"><h4 style="text-align: center; padding-top: 60px; color: black;"> < View Standing World Cup 2026 ></h4></a>
@@ -174,48 +171,31 @@ table th {
 
 		<div class="package-content">
 			<div class="box">
-				<div class="thum">
-					<img src="img/muriqi.jpg">
-					
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>Vedat Muriqi</h4>
-						<p>Striker</p>
-					</div>
-					
-				</div>
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="img/muriqi.jpg" style="width: 100%;" />
+				<div class="texts" style="color:black"><b><i>Vedat Muriqi</i></b></div>
 			</div>
-
-			<div class="box">
-				<div class="thum">
-					<img src="img/milot.jpg">
-					
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>Milot Rashica</h4>
-						<p>Captain</p>
-					</div>
-					
-				</div>
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="img/milot.jpg" style="width: 100%" />
+				<div class="texts" style="color:black"><b><i>Milot Rashica</b></i></div>
 			</div>
-
-			<div class="box">
-				<div class="thum">
-					<img src="img/arber.jpg">
-					
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>Arber Zeneli</h4>
-						<p>Striker</p>
-					</div>
-					
-				</div>
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="img/arber.jpg" style="width: 100%" />
+				<div class="texts" style="color: black;"><i><b>Arber Zeneli</b></i></div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br />
+			<div style="text-align: center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
 			</div>
 
 			
@@ -336,6 +316,8 @@ table th {
 
 	<!--link to js--->
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+
 
 </body>
 </html>
