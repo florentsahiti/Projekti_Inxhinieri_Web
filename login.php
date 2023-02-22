@@ -32,7 +32,7 @@
 
     <div class="tab-form">
         <div class="tab-header">
-            <div class="active">Sign up</div>
+            <div class="active">sign up</div>
             <div>Log in</div>
         </div>
         <div class="tab-body">
