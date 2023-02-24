@@ -25,7 +25,8 @@
 			<li><a href="/players.html">Players</a></li>
 			<li><a href="/fixtures.html">Fixtures</a></li>
 			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="/login.html">Log In</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Log In</a></li>
 			
 		</ul>
 	</header>

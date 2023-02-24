@@ -16,7 +16,8 @@
 			<li><a href="#package">Players</a></li>
 			<li><a href="#fixtures">Fixtures</a></li>
 			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="login.html">Kyqu</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Log In</a></li>
 			
 		</ul>
 	</header>
