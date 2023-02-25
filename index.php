@@ -112,8 +112,8 @@ table th {
 			<li><a href="#package">Players</a></li>
 			<li><a href="#fixtures">Fixtures</a></li>
 			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="#">Sign Up</a></li>
-			<li><a href="#">Log In</a></li>
+			<li><a href="register_form.php">Kycu</a></li>
+			
 			
 			
 		</ul>
