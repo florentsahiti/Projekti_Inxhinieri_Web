@@ -1,3 +1,36 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if (isset($_SESSION['role'])) {
+	$username = '';
+	$role = '';
+	// If the user is logged in, retrieve the user's information from the session
+	if($_SESSION['role']== 'admin'){
+		$username = $_SESSION['user_name'];
+		$role = $_SESSION['role'];
+		// echo "Welcome Admin, $username!";
+	}
+	else if($_SESSION['role']== 'user') {
+		$username = $_SESSION['user_name'];
+		$role = $_SESSION['role'];
+		// echo "Welcome User, $username!";
+	}
+
+  } else {
+	$role = '';
+	// If the user is not logged in, display a message or redirect to the login page
+	// echo "Please log in.";
+  }
+//    }else{
+//       $error[] = 'incorrect email or password!';
+//    }
+
+// };
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,6 +134,7 @@ table th {
 }
   </style>
 </head>
+
 <body>
 	<!--header--->
 	<header>
@@ -112,10 +146,19 @@ table th {
 			<li><a href="#package">Players</a></li>
 			<li><a href="#fixtures">Fixtures</a></li>
 			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="register_form.php">Kycu</a></li>
-			
-			
-			
+			<?php 
+			if($role == 'admin'){
+				echo "<li><a href='admin_page.php'>Admin Dashboard</a></li>
+				<li><a href='logout.php'>Log out</a></li>";
+			}
+			else if($role == 'user'){
+				echo "<li><a href='user_page.php'>User Dashboard</a></li>
+				<li><a href='logout.php'>Log out</a></li>";
+			}
+			else if($role == ''){
+				echo "<li><a href='register_form.php'>Kycu</a></li>";
+			}
+			?>
 		</ul>
 	</header>
 

@@ -134,4 +134,33 @@
    border-radius: 5px;
    font-size: 20px;
    padding:10px;
+
+}
+.navbar{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom:solid 1px;
+}
+.navbar .menu {
+   width: 20%;
+}
+.navbar .menu ul{
+   width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.menu ul li{
+   list-style-type: none;
+   text-decoration: none;
+}
+.menu ul li a{
+   color: black!important;
+}
+
+
+.nav-title{
+   color: black;
 }

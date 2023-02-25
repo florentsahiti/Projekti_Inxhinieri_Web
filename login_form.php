@@ -20,17 +20,23 @@ if(isset($_POST['submit'])){
 
       $row = mysqli_fetch_array($result);
 
-      if($row['user_type'] == 'admin'){
-
-         $_SESSION['admin_name'] = $row['name'];
-         header('location:index.php');
-
-      }elseif($row['user_type'] == 'user'){
-
+      if($row){
          $_SESSION['user_name'] = $row['name'];
-         header('location:user_page.php');
-
+         $_SESSION['role'] = $row['user_type'];
+         header('location:index.php');
       }
+
+      // if($row['user_type'] == 'admin'){
+
+      //    $_SESSION['admin_name'] = $row['name'];
+      //    header('location:index.php');
+
+      // }elseif($row['user_type'] == 'user'){
+
+      //    $_SESSION['user_name'] = $row['name'];
+      //    header('location:user_page.php');
+
+      // }
      
    }else{
       $error[] = 'incorrect email or password!';

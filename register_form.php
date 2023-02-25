@@ -1,7 +1,7 @@
 <?php
 
 @include 'config.php';
-
+session_start();
 if(isset($_POST['submit'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -25,6 +25,12 @@ if(isset($_POST['submit'])){
       }else{
          $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
          mysqli_query($conn, $insert);
+        
+         $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+         $result = mysqli_query($conn, $select);
+         $row = mysqli_fetch_array($result);
+         $_SESSION['user_name'] = $row['name'];
+         $_SESSION['role'] = $row['user_type'];
          header('location:index.php');
       }
    }
