@@ -20,6 +20,12 @@ if($_SESSION['role']!='admin'){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="cssL/style.css">
+   <style>
+      body{
+         background-image: url(img/background.jpg);
+      }
+
+   </style>
 
 </head>
 <body>
@@ -29,7 +35,7 @@ if($_SESSION['role']!='admin'){
    <!-- Navbar -->
 <div class="navbar">
    <div class="logo">
-      <a style="margin-left:30px;" href="index.php">
+      <a style="margin-left:30px; font-size:40px; color:black;" href="index.php">
       Kosova
       </a>
    </div>
@@ -42,6 +48,8 @@ if($_SESSION['role']!='admin'){
 		</ul>
    </div>
 </div>
+
+<h1 style="text-align:center; margin-top: 100px;">This is an Admin Dashboard</h1>
 
 <!-- Page content -->
 <!-- <div style="padding: 16px">
