@@ -13,9 +13,9 @@ PHP
 
 
 Eshte punuar nga:
-Florent Sahiti 
+Florent Sahiti &
 Rion Sermaxhaj
 
 Profesoret:
-Ramiz Hoxha - MSc.
+Ramiz Hoxha - MSc. &
 Blerina Rrmoku - can. MSc
