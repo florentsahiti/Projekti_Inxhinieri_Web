@@ -4,7 +4,7 @@
 
 session_start();
 
-if($_SESSION['role']!='admin'){
+if(!$_SESSION['role']){
    header('location:login_form.php');
 }
 
@@ -177,11 +177,15 @@ span{
 		if($result){
 			while($row=mysqli_fetch_assoc($result)){
 				$id=$row['id'];
+				$img = $row['img'];
 				$position=$row['position'];
 				$name=$row['name'];
 				$bio=$row['bio'];
 				echo'
 				<section>
+				<figure>
+			<img src="'.$img.'"; alt="Free Stock Photo from pexels.com">
+		  </figure>
 				<article>
 				<th scope="row">'.$id.'</th>
 				<span>'.$position.'</span>

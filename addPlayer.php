@@ -41,8 +41,8 @@ if($result){
     <h2 style="display:flex; justify-content:center;  align-items:center;">Add a Player</h2>
     <div class="inputBox">
         
-        <!-- <input type="img" class="form-control" name="img" autocomplete="off" required="required">
-        <span>Insert Img</span> -->
+        <input type="text" class="form-control" name="img" autocomplete="off" required="required">
+        <span>Insert Img</span>
       </div>
     <div class="inputBox">
         <input type="text" class="form-control" name="position" required="required">

@@ -42,10 +42,6 @@ if($_SESSION['role']!='admin'){
 
     <h1>Standings</h1>
 
-
-
-	
-
 	<div class="container">
         <button class="btnA my-5"><a href="addStanding.php" class="text-light">Add Standing</a>
     </button>
@@ -68,7 +64,7 @@ if($_SESSION['role']!='admin'){
   <tbody class="user-tab">
 <?php
 
-$sql = "select * from `points`";
+$sql = "select * from `points` ORDER BY PTS DESC";
 $result = mysqli_query($conn,$sql);
 if($result){
     while($row=mysqli_fetch_assoc($result)){
@@ -96,7 +92,7 @@ if($result){
         <td>
         <div class="divBtn">
         <button class="btnU"><a href="updatePoints.php?updateid='.$id.'">Update</a></button>
-        <button class="btnD"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
+        <button class="btnD"><a href="deletePoints.php?deleteid='.$id.'">Delete</a></button>
         </div>
         </td>
       </tr>';

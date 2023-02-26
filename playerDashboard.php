@@ -17,6 +17,8 @@ if($_SESSION['role']!='admin'){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssL/style.css">
+    <link rel="stylesheet" href="css/fixtures.css">
    <style>
     .navbar{
    width: 100%;
@@ -244,7 +246,7 @@ padding: 20px;
    <div class="menu">
    <ul>
 			<li><a href="display.php">Users</a></li>
-			<li><a href="#package">Points</a></li>
+			<li><a href="pointsDashboard.php">Points</a></li>
 			<li><a href="fixtures.php">Fixtures</a></li>
 			<li><a href="playerDashboard.php">Players</a></li>
 		</ul>
@@ -287,8 +289,8 @@ if($result){
         <td>'.$bio.'</td>
         <td>
         <div class="divBtn">
-        <button class="btnU"><a href="update.php?updateid='.$id.'">Update</a></button>
-        <button class="btnD"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
+        <button class="btnU"><a href="updatePlayers.php?updateid='.$id.'">Update</a></button>
+        <button class="btnD"><a href="deletePlayers.php?deleteid='.$id.'">Delete</a></button>
         </div>
         </td>
       </tr>';

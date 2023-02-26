@@ -26,7 +26,7 @@ if($_SESSION['role']!='admin'){
 <body>
 <div class="navbar">
    <div class="logo">
-      <a style="text-decoration:none; color:black;"  href="index.php">
+      <a style="text-decoration:none; color:black; margin-left:30px;"  href="index.php">
       Kosova
       </a>
    </div>
@@ -82,8 +82,8 @@ if($result){
         <td>'.$time.'</td>
         <td>
         <div class="divBtn">
-        <button class="btnU"><a href="update.php?updateid='.$id.'">Update</a></button>
-        <button class="btnD"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
+        <button class="btnU"><a href="updateFixtures.php?updateid='.$id.'">Update</a></button>
+        <button class="btnD"><a href="deleteFixtures.php?deleteid='.$id.'">Delete</a></button>
         </div>
         </td>
       </tr>';

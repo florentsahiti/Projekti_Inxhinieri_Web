@@ -4,7 +4,7 @@
 
 session_start();
 
-if($_SESSION['role']!='admin'){
+if(!$_SESSION['role']){
    header('location:login_form.php');
 }
 
@@ -73,7 +73,7 @@ if($_SESSION['role']!='admin'){
   <tbody class="user-tab">
 <?php
 
-$sql = "select * from `points`";
+$sql = "select * from `points` ORDER BY PTS DESC";
 $result = mysqli_query($conn,$sql);
 if($result){
     while($row=mysqli_fetch_assoc($result)){

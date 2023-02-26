@@ -9,8 +9,9 @@ include 'config.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cssL/display.css">
+    
     <link rel="stylesheet" href="cssL/style.css">
+    <link rel="stylesheet" href="css/fixtures.css">
     <title>Crud operation</title>
 </head>
 <body>  
@@ -21,6 +22,7 @@ include 'config.php';
       </a>
    </div>
    <div class="menu">
+
    <ul>
 			<li><a href="display.php">Users</a></li>
 			<li><a href="pointsDashboard.php">Points</a></li>
@@ -29,6 +31,9 @@ include 'config.php';
 		</ul>
    </div>
 </div>
+
+
+  <h1 style="display:flex; justify-content:center; margin-left:30px;">Users</h1>
     <div class="container">
         <button class="btnA my-5"><a href="user.php" class="text-light">Add User</a>
     </button>
