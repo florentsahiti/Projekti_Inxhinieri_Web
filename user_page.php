@@ -27,12 +27,12 @@ if(!isset($_SESSION['user_name'])){
 <div class="container">
 
    <div class="content">
-      <h3>hi, <span>user</span></h3>
-      <h1>welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
+      <h3>hi, <span style="background-color:blue;">user</span></h3>
+      <h1>welcome <span style="color:blue;"><?php echo $_SESSION['user_name'] ?></span></h1>
       <p>this is an user page</p>
-      <a href="login_form.php" class="btn">login</a>
-      <a href="register_form.php" class="btn">register</a>
-      <a href="logout.php" class="btn">logout</a>
+      <a href="login_form.php" style="background-color:blue;" class="btn">login</a>
+      <a href="register_form.php" style="background-color:blue;" class="btn">register</a>
+      <a href="logout.php" style="background-color:blue;" class="btn">logout</a>
    </div>
 
 </div>
