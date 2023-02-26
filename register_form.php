@@ -50,6 +50,12 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="cssL/style.css">
+   <style>
+      body{
+         backgroundcolor
+         
+      }
+   </style>
 
 </head>
 <body>
@@ -73,8 +79,8 @@ if(isset($_POST['submit'])){
          <option value="user">user</option>
          <option value="admin">admin</option>
       </select>
-      <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
+      <input style="background-color:blue; color:white;" type="submit" name="submit" value="register now" class="form-btn">
+      <p>already have an account? <a href="login_form.php" style="color:blue;">login now</a></p>
    </form>
 
 </div>
