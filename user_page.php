@@ -34,6 +34,7 @@ if(!isset($_SESSION['user_name'])){
       <a href="login_form.php" style="background-color:blue;" class="btn">login</a>
       <a href="register_form.php" style="background-color:blue;" class="btn">register</a>
       <a href="logout.php" style="background-color:blue;" class="btn">logout</a>
+      <a href="index.php" style="background-color:blue;" class="btn">Continue</a>
    </div>
 
 </div>

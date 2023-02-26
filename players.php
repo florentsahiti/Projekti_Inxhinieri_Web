@@ -20,6 +20,54 @@ if(!$_SESSION['role']){
 	
 	
 	<style>
+
+header{
+	
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+	transition: ease .40s;
+}
+
+.navbar{
+	display: flex;
+}
+.navbar a{
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+	color:black;
+}
+.navbar a:hover{
+	
+	color: #221314;;
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
+
+#menu-icon{
+	
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+.logo{
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color:black;
+}
 		body{
 			background-color: rgb(54, 54, 247);
 		}
@@ -100,10 +148,25 @@ span{
 	</style>
 </head>
 <body>
+
+<header>
+		<a href="index.php" class="logo">Kosova</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="index.php">Home</a></li>
+			<li><a href="players.php">Players</a></li>
+			<li><a href="index.php">Fixtures</a></li>
+			<li><a href="index.php">Contact Us</a></li>
+			
+			
+		</ul>
+	</header>
+
     
 
 	<main>
-		<section>
+		<!-- <section>
 		  <figure>
 			<img src="https://img.uefa.com/imgml/TP/players/2014/2023/324x324/106567.jpg" alt="Free Stock Photo from pexels.com">
 		  </figure>
@@ -169,7 +232,7 @@ span{
 			<h3>Vedat Muriqi</h3>
 			<p>Vedat Muriqi (born 24 April 1994) is a Kosovan professional footballer who plays as a striker for La Liga club Mallorca and the Kosovo national team.</p>
 		  </article>
-		</section>
+		</section> -->
 		<?php
 
 		$sql = "select * from `players`";

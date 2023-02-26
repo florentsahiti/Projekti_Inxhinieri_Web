@@ -180,29 +180,36 @@ table th {
 		</div>
 
 		<div class="row-items">
+			<a href="https://www.youtube.com/watch?v=jDK8xuGMIrw">
 			<div class="container-box">
 				<div class="container-img">
 					<img src="img/win.png">
 				</div>
-				<h4>Win</h4>
-				<p>Kosova 2-0 Azerbaijan</p>
+				<h4 style="color:black;" >Win</h4>
+				<p>Kosova 4-0 Azerbaijan</p>
 			</div>
+			</a>
 
+			<a href="https://www.youtube.com/watch?v=c6kTEoZVhNM">
 			<div class="container-box">
 				<div class="container-img">
 					<img src="img/d.png">
 				</div>
-				<h4>Draw </h4>
-				<p>Albania 1-1 Kosova</p>
+				<h4 style="color:black;">Win </h4>
+				<p>Kosova 3-0 Albania </p>
 			</div>
+			</a>
 
+			<a href="https://www.youtube.com/watch?v=ezCLA0CUA4A">
 			<div class="container-box">
 				<div class="container-img">
 					<img src="img/win.png">
 				</div>
-				<h4>Win </h4>
-				<p>Hungary 1-2 Kosova</p>
+				<h4 style="color:black;">Win </h4>
+				<p>England 5-3 Kosova</p>
 			</div>
+			</a>
+
 
 			
 

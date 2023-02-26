@@ -23,24 +23,26 @@ if(!$_SESSION['role']){
     
     <style>
         body{
-            background-color: rgb(49, 49, 134);
+            background-image: url(img/background.jpg)
         }
+		td{
+			color:white;
+		}
     </style>
 
 
 </head>
 <body>
     <header>
-		<a href="/index.html" class="logo">Kosova</a>
+		<a href="index.php" class="logo">Kosova</a>
 		<div class="bx bx-menu" id="menu-icon"></div>
 
 		<ul class="navbar">
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/players.html">Players</a></li>
-			<li><a href="/fixtures.html">Fixtures</a></li>
-			<li><a href="#contact">Contact Us</a></li>
-			<li><a href="#">Sign Up</a></li>
-			<li><a href="#">Log In</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="players.php">Players</a></li>
+			<li><a href="index.php">Fixtures</a></li>
+			<li><a href="index.php">Contact Us</a></li>
+			
 			
 		</ul>
 	</header>
