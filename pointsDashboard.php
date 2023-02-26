@@ -26,7 +26,7 @@ if($_SESSION['role']!='admin'){
 <body>
 <div class="navbar">
    <div class="logo">
-      <a style="text-decoration:none; color:black;"  href="index.php">
+      <a style="text-decoration:none; color:black; margin-left:30px;"  href="index.php">
       Kosova
       </a>
    </div>
@@ -40,49 +40,62 @@ if($_SESSION['role']!='admin'){
    </div>
 </div>
 
-    <h1>Fixtures</h1>
+    <h1>Standings</h1>
 
 
 
 	
 
 	<div class="container">
-        <button class="btnA my-5"><a href="addGame.php" class="text-light">Add a game</a>
+        <button class="btnA my-5"><a href="addStanding.php" class="text-light">Add Standing</a>
     </button>
 
     <table class="table">
   <thead class="tableUser">
-    <tr>
-      <th scope="col">Serial number</th>
-      <th scope="col">Date</th>
-      <th scope="col">Game</th>
-      <th scope="col">Stadium</th>
-      <th scope="col">Time</th>
-      <th scope="col">operations</th>
+  <tr class="col">
+	<th>#</th>
+	<th>Team</th>
+	<th>GP</th>
+	<th>W</th>
+	<th>D</th>
+	<th>L</th>
+	<th>GD</th>
+	<th>PTS</th>	
+	<th>opertaions</th>	
 
-    </tr>
+	</tr>
   </thead>
   <tbody class="user-tab">
 <?php
 
-$sql = "select * from `games`";
+$sql = "select * from `points`";
 $result = mysqli_query($conn,$sql);
 if($result){
     while($row=mysqli_fetch_assoc($result)){
         $id=$row['id'];
-        $date=$row['date'];
-        $game=$row['game'];
-        $stadium=$row['stadium'];
-        $time=$row['time'];
+        $Team=$row['Team'];
+        $GP=$row['GP'];
+        $W=$row['W'];
+        $D=$row['D'];
+        $L=$row['L'];
+        $GD=$row['GD'];
+        $PTS=$row['PTS'];
+
+        
+
         echo '<tr>
         <th scope="row">'.$id.'</th>
-        <td>'.$date.'</td>
-        <td>'.$game.'</td>
-        <td>'.$stadium.'</td>
-        <td>'.$time.'</td>
+        <td>'.$Team.'</td>
+        <td>'.$GP.'</td>
+        <td>'.$W.'</td>
+        <td>'.$D.'</td>
+        <td>'.$L.'</td>
+        <td>'.$GD.'</td>
+        <td>'.$PTS.'</td>
+
         <td>
         <div class="divBtn">
-        <button class="btnU"><a href="update.php?updateid='.$id.'">Update</a></button>
+        <button class="btnU"><a href="updatePoints.php?updateid='.$id.'">Update</a></button>
         <button class="btnD"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
         </div>
         </td>

@@ -132,6 +132,8 @@ table th {
     border-bottom: 0;
   }
 }
+
+
   </style>
 </head>
 
@@ -219,7 +221,7 @@ table th {
 			<div class="slideshow-container">
 			<div class="mySlides fade">
 				<div class="numbertext">1 / 3</div>
-				<img src="img/muriqi.jpg" style="width: 100%;" />
+				<img src="img/muriqi	.jpg" style="width: 100%;" />
 				<div class="texts" style="color:black"><b><i>Vedat Muriqi</i></b></div>
 			</div>
 			<div class="mySlides fade">
@@ -254,17 +256,48 @@ table th {
 	 <section class="fixtures" id="fixtures">
 		<h1 style="text-align: center;">Fixtures</h1>
 		<table>
-			
-			<thead>
-			  <tr>
-				<th>Date</th>
-				<th>Game</th>
-				<th>Stadium</th>
-				<th>Time</th>
-			  </tr>
-			</thead>
 			<tbody>
-			  <tr>
+			<table class="table">
+  <thead class="tableUser">
+    <tr>
+      <th scope="col">Serial number</th>
+      <th scope="col">Date</th>
+      <th scope="col">Game</th>
+      <th scope="col">Stadium</th>
+      <th scope="col">Time</th>
+
+    </tr>
+  </thead>
+  <tbody class="user-tab">
+<?php
+
+$sql = "select * from `games`";
+$result = mysqli_query($conn,$sql);
+if($result){
+    while($row=mysqli_fetch_assoc($result)){
+        $id=$row['id'];
+        $date=$row['date'];
+        $game=$row['game'];
+        $stadium=$row['stadium'];
+        $time=$row['time'];
+        echo '<tr>
+        <th scope="row">'.$id.'</th>
+        <td>'.$date.'</td>
+        <td>'.$game.'</td>
+        <td>'.$stadium.'</td>
+        <td>'.$time.'</td>
+      </tr>';
+    }
+}
+
+?>
+
+    
+
+  </tbody>
+</table>
+
+			  <!-- <tr>
 				<td data-label="NIM">16.04.2023</td>
 				<td data-label="Nama">Kosova vs Albania</td>
 				<td data-label="Jurusan">Fadil Vokrri</td>
@@ -287,7 +320,9 @@ table th {
 				<td data-label="Nama">Spain vs Kosova</td>
 				<td data-label="Jurusan"> Camp Nou </td>
 				<td data-label="Angkatan">21:00</td>
-			  </tr>
+			  </tr> -->
+
+			  
 			</tbody>
 		  </table>
 	</section>

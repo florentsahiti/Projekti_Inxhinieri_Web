@@ -3,6 +3,7 @@ include 'config.php';
 $id=$_GET['updateid'];
 
 $sql="select * from `user_form` where id=$id";
+
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_assoc($result);
 $name=$row['name'];
@@ -31,9 +32,6 @@ if($result){
   }
 }
 ?>
-
-
-
 
 
 <!doctype html>

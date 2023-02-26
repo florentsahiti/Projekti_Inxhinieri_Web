@@ -29,16 +29,16 @@ if($_SESSION['role']!='admin'){
    <!-- Navbar -->
 <div class="navbar">
    <div class="logo">
-      <a href="index.php">
+      <a style="margin-left:30px;" href="index.php">
       Kosova
       </a>
    </div>
    <div class="menu">
    <ul>
 			<li><a href="display.php">Users</a></li>
-			<li><a href="#package">Points</a></li>
-			<li><a href="#fixtures">Fixtures</a></li>
-			<li><a href="#contact">Players</a></li>
+			<li><a href="pointsDashboard.php">Points</a></li>
+			<li><a href="fixtures.php">Fixtures</a></li>
+			<li><a href="playerDashboard.php">Players</a></li>
 		</ul>
    </div>
 </div>

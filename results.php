@@ -1,3 +1,17 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if($_SESSION['role']!='admin'){
+   header('location:login_form.php');
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +50,60 @@
 
 	<div class="ptable">
 	  <h1 class="headin" style="margin-top: 100px;">Standings</h1>
-						<table>
+
+	  <table>
+			<tbody>
+			<table class="table">
+  <thead class="tableUser">
+    <tr>
+      <th scope="col">Serial number</th>
+      <th scope="col">Team</th>
+      <th scope="col">GP</th>
+      <th scope="col">W</th>
+      <th scope="col">D</th>
+      <th scope="col">L</th>
+      <th scope="col">GD</th>
+      <th scope="col">PTS</th>
+      
+
+
+
+    </tr>
+  </thead>
+  <tbody class="user-tab">
+<?php
+
+$sql = "select * from `points`";
+$result = mysqli_query($conn,$sql);
+if($result){
+    while($row=mysqli_fetch_assoc($result)){
+        $id=$row['id'];
+        $Team=$row['Team'];
+        $GP=$row['GP'];
+        $W=$row['W'];
+        $D=$row['D'];
+        $L=$row['L'];
+        $GD=$row['GD'];
+        $PTS=$row['PTS'];
+
+
+        echo '<tr>
+        <th scope="row">'.$id.'</th>
+        <td>'.$Team.'</td>
+        <td>'.$GP.'</td>
+        <td>'.$W.'</td>
+        <td>'.$D.'</td>
+        <td>'.$L.'</td>
+        <td>'.$GD.'</td>
+        <td>'.$PTS.'</td>
+
+      </tr>';
+    }
+}
+?>
+  </tbody>
+<!-- </table> -->
+						<!-- <table>
 							<tr class="col">
 								<th>#</th>
 								<th>Team</th>
@@ -159,7 +226,7 @@
 							</tr>
 						</table>
 	</div>
-    
+     -->
 
     
 </body>

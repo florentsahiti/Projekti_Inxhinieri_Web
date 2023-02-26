@@ -1,3 +1,15 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if($_SESSION['role']!='admin'){
+   header('location:login_form.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,7 +162,7 @@ span{
 		
 		<section>
 		  <figure>
-			<img src="/img/muriqi.jpg" alt="Free Stock Photo from pexels.com">
+			<img src="img/muriqi.jpg" alt="Free Stock Photo from pexels.com">
 		  </figure>
 		  <article>
 			<span>Striker</span>
@@ -158,8 +170,37 @@ span{
 			<p>Vedat Muriqi (born 24 April 1994) is a Kosovan professional footballer who plays as a striker for La Liga club Mallorca and the Kosovo national team.</p>
 		  </article>
 		</section>
+		<?php
+
+		$sql = "select * from `players`";
+		$result = mysqli_query($conn,$sql);
+		if($result){
+			while($row=mysqli_fetch_assoc($result)){
+				$id=$row['id'];
+				$position=$row['position'];
+				$name=$row['name'];
+				$bio=$row['bio'];
+				echo'
+				<section>
+				<article>
+				<th scope="row">'.$id.'</th>
+				<span>'.$position.'</span>
+				<h3>'.$name.'</h3>
+				<p>'.$bio.'</p>
+				</article>
+				</section>
+				';
+			}
+		}
+
+
+
+		?>
 	  </main>
 	
+
+
+		
     
 </body>
 </html>
